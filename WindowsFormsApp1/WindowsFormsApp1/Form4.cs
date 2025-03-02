@@ -24,5 +24,26 @@ namespace WindowsFormsApp1
             mainWindows.ShowDialog();
             Close();
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Hide();
+            addProvider producer = new addProvider();
+            producer.ShowDialog();
+            Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Hide();
+            deleteProvider producer = new deleteProvider();
+            producer.ShowDialog();
+            Close();
+        }
     }
 }

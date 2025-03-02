@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class salads
+    partial class addProvider
     {
         /// <summary>
         /// Required designer variable.
@@ -41,15 +41,14 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // salads
+            // addProvider
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
-            this.Name = "salads";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "salads";
+            this.Name = "addProvider";
+            this.Text = "addProvider";
             this.ResumeLayout(false);
 
         }

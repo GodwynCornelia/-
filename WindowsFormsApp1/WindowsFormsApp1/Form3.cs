@@ -24,5 +24,36 @@ namespace WindowsFormsApp1
             mainWindows.ShowDialog();
             Close();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Hide();
+            addProduct adding = new addProduct();
+            adding.ShowDialog();
+            Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Hide();
+            deleteProduct delete = new deleteProduct();
+            delete.ShowDialog();
+            Close();
+        }
     }
 }

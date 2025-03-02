@@ -46,11 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addProduct.Designer.cs">
+      <DependentUpon>addProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addProvider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addProvider.Designer.cs">
+      <DependentUpon>addProvider.cs</DependentUpon>
+    </Compile>
     <Compile Include="bakery.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="bakery.Designer.cs">
       <DependentUpon>bakery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deleteProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteProduct.Designer.cs">
+      <DependentUpon>deleteProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deleteProvider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteProvider.Designer.cs">
+      <DependentUpon>deleteProvider.cs</DependentUpon>
     </Compile>
     <Compile Include="deserts.cs">
       <SubType>Form</SubType>
@@ -126,8 +150,20 @@
     <Compile Include="Сonfectionery.Designer.cs">
       <DependentUpon>Сonfectionery.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="addProduct.resx">
+      <DependentUpon>addProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addProvider.resx">
+      <DependentUpon>addProvider.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="bakery.resx">
       <DependentUpon>bakery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteProduct.resx">
+      <DependentUpon>deleteProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteProvider.resx">
+      <DependentUpon>deleteProvider.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="deserts.resx">
       <DependentUpon>deserts.cs</DependentUpon>
