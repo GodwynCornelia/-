@@ -24,5 +24,10 @@ namespace WindowsFormsApp1
             back.ShowDialog();
             Close();
         }
+
+        private void snacks_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

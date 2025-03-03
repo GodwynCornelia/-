@@ -97,5 +97,21 @@ namespace WindowsFormsApp1
             greengrocery.ShowDialog();
             Close();
         }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Hide();
+            addDelish delish = new addDelish();
+            delish.ShowDialog();
+            Close();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Hide();
+            deleteDelish delish = new deleteDelish();
+            delish.ShowDialog();
+            Close();
+        }
     }
 }

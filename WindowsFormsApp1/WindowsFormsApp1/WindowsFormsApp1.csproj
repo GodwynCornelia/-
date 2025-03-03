@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addDelish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addDelish.Designer.cs">
+      <DependentUpon>addDelish.cs</DependentUpon>
+    </Compile>
     <Compile Include="addProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,12 @@
     </Compile>
     <Compile Include="bakery.Designer.cs">
       <DependentUpon>bakery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deleteDelish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteDelish.Designer.cs">
+      <DependentUpon>deleteDelish.cs</DependentUpon>
     </Compile>
     <Compile Include="deleteProduct.cs">
       <SubType>Form</SubType>
@@ -150,6 +162,9 @@
     <Compile Include="Сonfectionery.Designer.cs">
       <DependentUpon>Сonfectionery.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="addDelish.resx">
+      <DependentUpon>addDelish.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addProduct.resx">
       <DependentUpon>addProduct.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="bakery.resx">
       <DependentUpon>bakery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteDelish.resx">
+      <DependentUpon>deleteDelish.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="deleteProduct.resx">
       <DependentUpon>deleteProduct.cs</DependentUpon>

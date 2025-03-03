@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class addProvider: Form
+    public partial class deleteDelish : Form
     {
-        public addProvider()
+        public deleteDelish()
         {
             InitializeComponent();
         }
@@ -20,19 +20,9 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             Hide();
-            Form4 back = new Form4();
+            Assortment back = new Assortment();
             back.ShowDialog();
             Close();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -72,3 +72,5 @@ C:\Федя\-\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.cspro
 C:\Федя\-\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Федя\-\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Федя\-\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Федя\-\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.addDelish.resources
+C:\Федя\-\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.deleteDelish.resources
