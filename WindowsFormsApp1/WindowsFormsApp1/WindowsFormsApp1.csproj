@@ -33,8 +33,67 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.10.0.0-preview.2.25163.2\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.10.0.0-preview.2.25163.2\lib\net462\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.10.0.0-preview.2.25163.2\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.10.0.0-preview.2.25163.2\lib\net462\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.10.0.0-preview.2.25163.2\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.10.0.0-preview.2.25163.2\lib\net462\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.10.0.0-preview.2.25163.2\lib\net462\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Bson, Version=1.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.Bson.1.0.3\lib\net45\Newtonsoft.Json.Bson.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.6.0\lib\net462\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.10.0.0-preview.2.25163.2\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipelines, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.10.0.0-preview.2.25163.2\lib\net462\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.6.0\lib\net462\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.6.0\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.1.0\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.10.0.0-preview.2.25163.2\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.10.0.0-preview.2.25163.2\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.6.0\lib\net462\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,166 +105,135 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="addDelish.cs">
+    <Compile Include="Model\Assortiment\BakeryJsonRepository.cs" />
+    <Compile Include="Model\Assortiment\DesertJsonRepository.cs" />
+    <Compile Include="Model\Assortiment\DrinkJsonRepository.cs" />
+    <Compile Include="Model\Assortiment\FirstJsonRepository.cs" />
+    <Compile Include="Model\Assortiment\SaladJsonRepository.cs" />
+    <Compile Include="Model\Assortiment\Delish.cs" />
+    <Compile Include="Model\Assortiment\IAssortimentRepository.cs" />
+    <Compile Include="Model\Assortiment\SecondJsonRepository.cs" />
+    <Compile Include="Model\Postavshik\IPostavshikRepository.cs" />
+    <Compile Include="Model\Postavshik\PostavshikJsonRepository.cs" />
+    <Compile Include="Model\Postavshik\Postavshik.cs" />
+    <Compile Include="Model\Product\IProductRepository.cs" />
+    <Compile Include="Model\Product\ProductJsonRepository.cs" />
+    <Compile Include="Model\Product\Product.cs" />
+    <Compile Include="Presenter\AssortimentPresent.cs" />
+    <Compile Include="Presenter\delish\BakeryPresent.cs" />
+    <Compile Include="Presenter\delish\DesertPresent.cs" />
+    <Compile Include="Presenter\delish\DrinkPresent.cs" />
+    <Compile Include="Presenter\delish\FirstPresent.cs" />
+    <Compile Include="Presenter\delish\SaladPresent.cs" />
+    <Compile Include="Presenter\delish\SecondPresent.cs" />
+    <Compile Include="Presenter\MainPresent.cs" />
+    <Compile Include="Presenter\ProductPresent.cs" />
+    <Compile Include="Presenter\PostavshikPresent.cs" />
+    <Compile Include="View\Assortiment\bakery\IbakeryView.cs" />
+    <Compile Include="View\Assortiment\deserts\IdesertsView.cs" />
+    <Compile Include="View\Assortiment\drinks\IdrinkView.cs" />
+    <Compile Include="View\Assortiment\first_Courses\IfirstView.cs" />
+    <Compile Include="View\Assortiment\IAssortimentView.cs" />
+    <Compile Include="View\Assortiment\salads\IsaladView.cs" />
+    <Compile Include="View\Assortiment\second_Courses\IsecondView.cs" />
+    <Compile Include="View\Main\IMainView.cs" />
+    <Compile Include="View\Product\addProduct.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="addDelish.Designer.cs">
-      <DependentUpon>addDelish.cs</DependentUpon>
-    </Compile>
-    <Compile Include="addProduct.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="addProduct.Designer.cs">
+    <Compile Include="View\Product\addProduct.Designer.cs">
       <DependentUpon>addProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="addProvider.cs">
+    <Compile Include="View\Assortiment\bakery\bakery.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="addProvider.Designer.cs">
-      <DependentUpon>addProvider.cs</DependentUpon>
-    </Compile>
-    <Compile Include="bakery.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="bakery.Designer.cs">
+    <Compile Include="View\Assortiment\bakery\bakery.Designer.cs">
       <DependentUpon>bakery.cs</DependentUpon>
     </Compile>
-    <Compile Include="deleteDelish.cs">
+    <Compile Include="View\Assortiment\deserts\deserts.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="deleteDelish.Designer.cs">
-      <DependentUpon>deleteDelish.cs</DependentUpon>
-    </Compile>
-    <Compile Include="deleteProduct.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="deleteProduct.Designer.cs">
-      <DependentUpon>deleteProduct.cs</DependentUpon>
-    </Compile>
-    <Compile Include="deleteProvider.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="deleteProvider.Designer.cs">
-      <DependentUpon>deleteProvider.cs</DependentUpon>
-    </Compile>
-    <Compile Include="deserts.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="deserts.Designer.cs">
+    <Compile Include="View\Assortiment\deserts\deserts.Designer.cs">
       <DependentUpon>deserts.cs</DependentUpon>
     </Compile>
-    <Compile Include="drinks.cs">
+    <Compile Include="View\Assortiment\drinks\drinks.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="drinks.Designer.cs">
+    <Compile Include="View\Assortiment\drinks\drinks.Designer.cs">
       <DependentUpon>drinks.cs</DependentUpon>
     </Compile>
-    <Compile Include="first_Сourses.cs">
+    <Compile Include="View\Assortiment\first_Courses\first_Сourses.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="first_Сourses.Designer.cs">
+    <Compile Include="View\Assortiment\first_Courses\first_Сourses.Designer.cs">
       <DependentUpon>first_Сourses.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="View\Main\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="View\Main\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Assortment.cs">
+    <Compile Include="View\Assortiment\Assortiment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Assortment.Designer.cs">
-      <DependentUpon>Assortment.cs</DependentUpon>
+    <Compile Include="View\Assortiment\Assortiment.Designer.cs">
+      <DependentUpon>Assortiment.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="View\Product\Form3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
+    <Compile Include="View\Product\Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="View\Postavshik\allPostavshik.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fruits.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fruits.Designer.cs">
-      <DependentUpon>fruits.cs</DependentUpon>
+    <Compile Include="View\Postavshik\allPostavshik.Designer.cs">
+      <DependentUpon>allPostavshik.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="salads.cs">
+    <Compile Include="View\Postavshik\IProvideView.cs" />
+    <Compile Include="View\Assortiment\salads\salads.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="salads.Designer.cs">
+    <Compile Include="View\Assortiment\salads\salads.Designer.cs">
       <DependentUpon>salads.cs</DependentUpon>
     </Compile>
-    <Compile Include="second_Courses.cs">
+    <Compile Include="View\Assortiment\second_Courses\second_Courses.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="second_Courses.Designer.cs">
+    <Compile Include="View\Assortiment\second_Courses\second_Courses.Designer.cs">
       <DependentUpon>second_Courses.cs</DependentUpon>
     </Compile>
-    <Compile Include="snacks.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="snacks.Designer.cs">
-      <DependentUpon>snacks.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Сonfectionery.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Сonfectionery.Designer.cs">
-      <DependentUpon>Сonfectionery.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="addDelish.resx">
-      <DependentUpon>addDelish.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="addProduct.resx">
+    <Compile Include="View\Product\IAdderProductView.cs" />
+    <Compile Include="View\Product\IProductView.cs" />
+    <EmbeddedResource Include="View\Product\addProduct.resx">
       <DependentUpon>addProduct.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="addProvider.resx">
-      <DependentUpon>addProvider.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="bakery.resx">
+    <EmbeddedResource Include="View\Assortiment\bakery\bakery.resx">
       <DependentUpon>bakery.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="deleteDelish.resx">
-      <DependentUpon>deleteDelish.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="deleteProduct.resx">
-      <DependentUpon>deleteProduct.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="deleteProvider.resx">
-      <DependentUpon>deleteProvider.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="deserts.resx">
+    <EmbeddedResource Include="View\Assortiment\deserts\deserts.resx">
       <DependentUpon>deserts.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="drinks.resx">
+    <EmbeddedResource Include="View\Assortiment\drinks\drinks.resx">
       <DependentUpon>drinks.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="first_Сourses.resx">
+    <EmbeddedResource Include="View\Assortiment\first_Courses\first_Сourses.resx">
       <DependentUpon>first_Сourses.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="View\Main\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Assortment.resx">
-      <DependentUpon>Assortment.cs</DependentUpon>
+    <EmbeddedResource Include="View\Assortiment\Assortiment.resx">
+      <DependentUpon>Assortiment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
+    <EmbeddedResource Include="View\Product\Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fruits.resx">
-      <DependentUpon>fruits.cs</DependentUpon>
+    <EmbeddedResource Include="View\Postavshik\allPostavshik.resx">
+      <DependentUpon>allPostavshik.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -216,18 +244,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="salads.resx">
+    <EmbeddedResource Include="View\Assortiment\salads\salads.resx">
       <DependentUpon>salads.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="second_Courses.resx">
+    <EmbeddedResource Include="View\Assortiment\second_Courses\second_Courses.resx">
       <DependentUpon>second_Courses.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="snacks.resx">
-      <DependentUpon>snacks.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Сonfectionery.resx">
-      <DependentUpon>Сonfectionery.cs</DependentUpon>
-    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -241,5 +264,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

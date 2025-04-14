@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace WindowsFormsApp1.View.Assortiment.second_Courses
+{
+    public interface IsecondView
+    {
+        event EventHandler LoadAssortimentForm;
+
+        IList<string> SecondList { get; set; }
+        int SelectedSecond { get; set; }
+        string Name { get; set; }
+        string Group { get; set; }
+
+        string Price { get; set; }
+        string Exit { get; set; }
+        string Description { get; set; }
+        void Show();
+        void Hide();
+
+        Presenter.delish.SecondPresent Presenter { set; }
+    }
+}
