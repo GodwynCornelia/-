@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.Model.Assortiment
 {
-    public class BakeryJsonRepository : IAssortimentRepository
+    public class BakeryJsonRepository : IBakeryRepository
     {
         public readonly string JsonPath;
         public List<Delish> delishs;
@@ -52,23 +52,23 @@ namespace WindowsFormsApp1.Model.Assortiment
             delishs = JsonSerializer.Deserialize<List<Delish>>(json);
         }
 
-        public IEnumerable<Delish> GetAllDelish()
+        public IEnumerable<Delish> GetAllBakery()
         {
             return delishs;
         }
-        public Delish GetDelish(int id)
+        public Delish GetBakery(int id)
         {
             return delishs[id];
         }
 
 
 
-        public void AddDelish(Delish delish)
+        public void AddBakery(Delish delish)
         {
             delishs.Add(delish);
             SaveDelishList(delishs);
         }
-        public void SaveDelish(int id, Delish delish)
+        public void SaveBakery(int id, Delish delish)
         {
             delishs[id] = delish;
             SaveDelishList(delishs);

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WindowsFormsApp1.Model.Assortiment;
+using WindowsFormsApp1.Model.Assortiment.Interface;
 using WindowsFormsApp1.View.Assortiment.bakery;
 using WindowsFormsApp1.View.Assortiment.deserts;
 using WindowsFormsApp1.View.Assortiment.salads;
@@ -13,9 +14,9 @@ namespace WindowsFormsApp1.Presenter.delish
     public class DesertPresent
     {
         private readonly IdesertsView _DesertView;
-        private readonly IAssortimentRepository _DesertRepository;
+        private readonly IDesertRepository _DesertRepository;
 
-        public DesertPresent(IdesertsView desertView, IAssortimentRepository desertRepository)
+        public DesertPresent(IdesertsView desertView, IDesertRepository desertRepository)
         {
             _DesertRepository = desertRepository;
             _DesertView = desertView;
@@ -31,7 +32,7 @@ namespace WindowsFormsApp1.Presenter.delish
         }
         private void UpdateDelishListView()
         {
-            var DesertName = from desert in _DesertRepository.GetAllDelish() select desert.Name;
+            var DesertName = from desert in _DesertRepository.GetAllDesert() select desert.Name;
             int selectedDesert = _DesertView.SelectedDesert >= 0 ? _DesertView.SelectedDesert : 0;
 
 
@@ -47,7 +48,7 @@ namespace WindowsFormsApp1.Presenter.delish
 
         public void UpdateDelishView(int id)
         {
-            Delish delish = _DesertRepository.GetDelish(id);
+            Delish delish = _DesertRepository.GetDesert(id);
             _DesertView.Name = delish.Name;
             _DesertView.Group = delish.Group;
             _DesertView.Price = delish.Price;
@@ -59,7 +60,7 @@ namespace WindowsFormsApp1.Presenter.delish
         public void AddDelish()
         {
             var newDelish = new Delish();
-            _DesertRepository.AddDelish(newDelish);
+            _DesertRepository.AddDesert(newDelish);
             UpdateDelishListView();
         }
     }

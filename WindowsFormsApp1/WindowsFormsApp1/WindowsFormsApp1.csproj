@@ -109,9 +109,14 @@
     <Compile Include="Model\Assortiment\DesertJsonRepository.cs" />
     <Compile Include="Model\Assortiment\DrinkJsonRepository.cs" />
     <Compile Include="Model\Assortiment\FirstJsonRepository.cs" />
+    <Compile Include="Model\Assortiment\Interface\IBakeryRepository.cs" />
+    <Compile Include="Model\Assortiment\Interface\IDesertRepository.cs" />
+    <Compile Include="Model\Assortiment\Interface\IDrinkRepository.cs" />
+    <Compile Include="Model\Assortiment\Interface\IFirstRepository.cs" />
+    <Compile Include="Model\Assortiment\Interface\ISaladRepository.cs" />
+    <Compile Include="Model\Assortiment\Interface\ISecondRepository.cs" />
     <Compile Include="Model\Assortiment\SaladJsonRepository.cs" />
     <Compile Include="Model\Assortiment\Delish.cs" />
-    <Compile Include="Model\Assortiment\IAssortimentRepository.cs" />
     <Compile Include="Model\Assortiment\SecondJsonRepository.cs" />
     <Compile Include="Model\Postavshik\IPostavshikRepository.cs" />
     <Compile Include="Model\Postavshik\PostavshikJsonRepository.cs" />

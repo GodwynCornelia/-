@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
+using WindowsFormsApp1.Model.Assortiment.Interface;
 using WindowsFormsApp1.Model.Product;
 
 namespace WindowsFormsApp1.Model.Assortiment
 {
-    public class SaladJsonRepository: IAssortimentRepository
+    public class SaladJsonRepository: ISaladRepository
     {
         public readonly string JsonPath;
         public List<Delish> delishs;
@@ -51,23 +52,23 @@ namespace WindowsFormsApp1.Model.Assortiment
             delishs = JsonSerializer.Deserialize<List<Delish>>(json);
         }
 
-        public IEnumerable<Delish> GetAllDelish()
+        public IEnumerable<Delish> GetAllSalad()
         {
             return delishs;
         }
-        public Delish GetDelish(int id)
+        public Delish GetSalad(int id)
         {
             return delishs[id];
         }
 
 
 
-        public void AddDelish(Delish delish)
+        public void AddSalad(Delish delish)
         {
             delishs.Add(delish);
             SaveDelishList(delishs);
         }
-        public void SaveDelish(int id, Delish delish)
+        public void SaveSalad(int id, Delish delish)
         {
             delishs[id] = delish;
             SaveDelishList(delishs);

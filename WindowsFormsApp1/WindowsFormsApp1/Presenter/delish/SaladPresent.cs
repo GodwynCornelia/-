@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using WindowsFormsApp1.Model;
 using WindowsFormsApp1.Model.Assortiment;
+using WindowsFormsApp1.Model.Assortiment.Interface;
 using WindowsFormsApp1.Model.Product;
 using WindowsFormsApp1.View.Assortiment.salads;
 using WindowsFormsApp1.View.Postavshik;
@@ -14,9 +15,9 @@ namespace WindowsFormsApp1.Presenter.delish
     public class SaladPresent
     {
         private readonly IsaladView _SaladView;
-        private readonly IAssortimentRepository _SaladRepository;
+        private readonly ISaladRepository _SaladRepository;
 
-        public SaladPresent(IsaladView saladView, IAssortimentRepository saladRepository)
+        public SaladPresent(IsaladView saladView, ISaladRepository saladRepository)
         {
             _SaladRepository = saladRepository;
             _SaladView = saladView;
@@ -34,7 +35,7 @@ namespace WindowsFormsApp1.Presenter.delish
 
         private void UpdateDelishListView()
         {
-            var SaladName = from salad in _SaladRepository.GetAllDelish() select salad.Name;
+            var SaladName = from salad in _SaladRepository.GetAllSalad() select salad.Name;
             int selectedSalad = _SaladView.SelectedSalad >= 0 ? _SaladView.SelectedSalad : 0;
 
 
@@ -54,7 +55,7 @@ namespace WindowsFormsApp1.Presenter.delish
 
         public void UpdateDelishView(int id)
         {
-            Delish delish = _SaladRepository.GetDelish(id);
+            Delish delish = _SaladRepository.GetSalad(id);
             _SaladView.Name = delish.Name;
             _SaladView.Group = delish.Group;
             _SaladView.Price = delish.Price;
@@ -66,7 +67,7 @@ namespace WindowsFormsApp1.Presenter.delish
         public void AddDelish()
         {
             var newDelish = new Delish();
-            _SaladRepository.AddDelish(newDelish);
+            _SaladRepository.AddSalad(newDelish);
             UpdateDelishListView();
         }
 

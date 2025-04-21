@@ -14,9 +14,9 @@ namespace WindowsFormsApp1.Presenter.delish
     public class BakeryPresent
     {
         private readonly IbakeryView _BakeryView;
-        private readonly IAssortimentRepository _BakeryRepository;
+        private readonly IBakeryRepository _BakeryRepository;
 
-        public BakeryPresent(IbakeryView bakeryView, IAssortimentRepository BakeryRepository)
+        public BakeryPresent(IbakeryView bakeryView, IBakeryRepository BakeryRepository)
         {
             _BakeryRepository = BakeryRepository;
             _BakeryView = bakeryView;
@@ -32,7 +32,7 @@ namespace WindowsFormsApp1.Presenter.delish
         }
         private void UpdateDelishListView()
         {
-            var BakeryName = from bakery in _BakeryRepository.GetAllDelish() select bakery.Name;
+            var BakeryName = from bakery in _BakeryRepository.GetAllBakery() select bakery.Name;
             int selectedBakery = _BakeryView.SelectedBakery >= 0 ? _BakeryView.SelectedBakery : 0;
 
 
@@ -48,7 +48,7 @@ namespace WindowsFormsApp1.Presenter.delish
 
         public void UpdateDelishView(int id)
         {
-            Delish delish = _BakeryRepository.GetDelish(id);
+            Delish delish = _BakeryRepository.GetBakery(id);
             _BakeryView.Name = delish.Name;
             _BakeryView.Group = delish.Group;
             _BakeryView.Price = delish.Price;
@@ -60,7 +60,7 @@ namespace WindowsFormsApp1.Presenter.delish
         public void AddDelish()
         {
             var newDelish = new Delish();
-            _BakeryRepository.AddDelish(newDelish);
+            _BakeryRepository.AddBakery(newDelish);
             UpdateDelishListView();
         }
     }

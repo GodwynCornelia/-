@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WindowsFormsApp1.Model.Assortiment;
+using WindowsFormsApp1.Model.Assortiment.Interface;
 using WindowsFormsApp1.View.Assortiment.first_Courses;
 using WindowsFormsApp1.View.Assortiment.salads;
 
@@ -12,9 +13,9 @@ namespace WindowsFormsApp1.Presenter.delish
     public class FirstPresent
     {
         private readonly IfirstView _firstView;
-        private readonly IAssortimentRepository _firstRepository;
+        private readonly IFirstRepository _firstRepository;
 
-        public FirstPresent(IfirstView firstView, IAssortimentRepository firstRepository)
+        public FirstPresent(IfirstView firstView, IFirstRepository firstRepository)
         {
             _firstRepository = firstRepository;
             _firstView = firstView;
@@ -32,7 +33,7 @@ namespace WindowsFormsApp1.Presenter.delish
 
         private void UpdateDelishListView()
         {
-            var firstName = from first in _firstRepository.GetAllDelish() select first.Name;
+            var firstName = from first in _firstRepository.GetAllFirst() select first.Name;
             int selectedfirst = _firstView.SelectedFirst >= 0 ? _firstView.SelectedFirst : 0;
 
 
@@ -48,7 +49,7 @@ namespace WindowsFormsApp1.Presenter.delish
 
         public void UpdateDelishView(int id)
         {
-            Delish delish = _firstRepository.GetDelish(id);
+            Delish delish = _firstRepository.GetFirst(id);
             _firstView.Name = delish.Name;
             _firstView.Group = delish.Group;
             _firstView.Price = delish.Price;
@@ -60,7 +61,7 @@ namespace WindowsFormsApp1.Presenter.delish
         public void AddDelish()
         {
             var newDelish = new Delish();
-            _firstRepository.AddDelish(newDelish);
+            _firstRepository.AddFirst(newDelish);
             UpdateDelishListView();
         }
     }

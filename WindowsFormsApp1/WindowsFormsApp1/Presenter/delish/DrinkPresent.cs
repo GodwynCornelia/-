@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WindowsFormsApp1.Model.Assortiment;
+using WindowsFormsApp1.Model.Assortiment.Interface;
 using WindowsFormsApp1.View.Assortiment.deserts;
 using WindowsFormsApp1.View.Assortiment.drinks;
 
@@ -12,9 +13,9 @@ namespace WindowsFormsApp1.Presenter.delish
     public class DrinkPresent
     {
         private readonly IdrinkView _DrinkView;
-        private readonly IAssortimentRepository _drinkRepository;
+        private readonly IDrinkRepository _drinkRepository;
 
-        public DrinkPresent(IdrinkView drinkView, IAssortimentRepository drinkRepository)
+        public DrinkPresent(IdrinkView drinkView, IDrinkRepository drinkRepository)
         {
             _drinkRepository= drinkRepository;  
             _DrinkView = drinkView;
@@ -31,7 +32,7 @@ namespace WindowsFormsApp1.Presenter.delish
 
         private void UpdateDelishListView()
         {
-            var DesertName = from drink in _drinkRepository.GetAllDelish() select drink.Name;
+            var DesertName = from drink in _drinkRepository.GetAllDrink() select drink.Name;
             int selectedDesert = _DrinkView.SelectedDrink >= 0 ? _DrinkView.SelectedDrink : 0;
 
 
@@ -47,7 +48,7 @@ namespace WindowsFormsApp1.Presenter.delish
 
         public void UpdateDelishView(int id)
         {
-            Delish delish = _drinkRepository.GetDelish(id);
+            Delish delish = _drinkRepository.GetDrink(id);
             _DrinkView.Name = delish.Name;
             _DrinkView.Group = delish.Group;
             _DrinkView.Price = delish.Price;
@@ -59,7 +60,7 @@ namespace WindowsFormsApp1.Presenter.delish
         public void AddDelish()
         {
             var newDelish = new Delish();
-            _drinkRepository.AddDelish(newDelish);
+            _drinkRepository.AddDrink(newDelish);
             UpdateDelishListView();
         }
     }

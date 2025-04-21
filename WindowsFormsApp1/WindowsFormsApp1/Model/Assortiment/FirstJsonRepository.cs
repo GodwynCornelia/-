@@ -5,10 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using WindowsFormsApp1.Model.Assortiment.Interface;
 
 namespace WindowsFormsApp1.Model.Assortiment
 {
-    public class FirstJsonRepository : IAssortimentRepository
+    public class FirstJsonRepository : IFirstRepository
     {
         public readonly string JsonPath;
         public List<Delish> delishs;
@@ -52,23 +53,23 @@ namespace WindowsFormsApp1.Model.Assortiment
             delishs = JsonSerializer.Deserialize<List<Delish>>(json);
         }
 
-        public IEnumerable<Delish> GetAllDelish()
+        public IEnumerable<Delish> GetAllFirst()
         {
             return delishs;
         }
-        public Delish GetDelish(int id)
+        public Delish GetFirst(int id)
         {
             return delishs[id];
         }
 
 
 
-        public void AddDelish(Delish delish)
+        public void AddFirst(Delish delish)
         {
             delishs.Add(delish);
             SaveDelishList(delishs);
         }
-        public void SaveDelish(int id, Delish delish)
+        public void SaveFirst(int id, Delish delish)
         {
             delishs[id] = delish;
             SaveDelishList(delishs);
